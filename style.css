@@ -1,0 +1,443 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background: rgb(44, 43, 43);
+    height: 60px;
+    position: sticky;
+    top: 0;
+}
+.header-1{
+    font-size: 14px;
+    line-height: 60px;
+    margin-left: 30px;
+}
+.header-2 ul{
+    line-height: 60px;
+    margin-right: 50px;
+}
+.header-2 li{
+    display: inline-block;
+    padding: 0 25px;
+}
+.header-2 a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+#checkbtn{
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+    display: none;
+
+}
+#check{
+    float: right;
+    margin-top: 20px;
+    display: none;
+}
+#check:checked ~ ul{
+    right: 10px;
+}
+.main{
+    background-image: url('/images/banner1.jfif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+.main div{
+    color: white;
+    margin-left: 50px;
+    font-size: 30px;
+    padding-top: 100px;
+}
+.about{
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.about span{
+    color: red;
+}
+.aboutM{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.about-1 img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+.about-2{
+    text-align: left;
+    font-size: 16px;
+    padding: 60px;
+    line-height: 25px;
+}
+.skill{
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#know{
+    color: red;
+}
+.skillM{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    line-height: 25px;
+}
+.skill-1{
+    width: 450px;
+    font-size: 16px;
+    text-align: left;
+    padding: 60px;
+    
+}
+.skill-2{
+    width: 550px;
+}
+.bars{
+    width: 450px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.line{
+    width: 450px;
+    background: lavender;
+    height: 7px;
+}
+.html{
+    background: red;
+    height: 7px;
+    width: 400px;
+}
+.css{
+    background: red;
+    height: 7px;
+    width: 370px;
+}
+.bootstrap{
+    background: red;
+    height: 7px;
+    width: 330px;
+}
+.javascript{
+    background: red;
+    height: 7px;
+    width: 290px;
+}
+.react{
+    background: red;
+    height: 7px;
+    width: 230px;
+}
+#work{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+.workM div span{
+    color: red;
+}
+.work{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    row-gap: 30px;
+    align-items: center;
+    justify-items: center;
+    margin: 0 50px;
+    margin-bottom: 20px;
+    
+}
+.work img{
+    height: 250px;
+    width: 450px;
+}
+.work p{
+    padding: 10px;
+    line-height: 25px;
+}
+.work-1{
+    width: 450px;
+    height: 350px;
+    box-shadow: 1px 1px 5px red;
+}
+.work-2{
+    width: 450px;
+    height: 350px;
+    box-shadow: 1px 1px 5px red;
+}
+.work-3{
+    width: 450px;
+    height: 350px;
+    box-shadow: 1px 1px 5px red;
+}
+.work-4{
+    width: 450px;
+    height: 350px;
+    box-shadow: 1px 1px 5px red;
+}
+#touch{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+.contactM div span{
+    color: red;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 70px;
+    margin-bottom: 30px;
+}
+.contact-1{
+    width: 400px;
+}
+.contact-1 div{
+    margin-left: 20px;
+}
+.contact-2{
+    width: 500px;
+}
+.contact-2 input{
+    width: 200px;
+    height: 25px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(112, 109, 109);
+    outline: none;
+    margin-top: 10px;
+}
+#subject{
+    width: 436px;
+    height: 30px;
+}
+#message{
+    width: 436px;
+    height: 60px;
+}
+#submit{
+    width: auto;
+    height: 35px;
+    padding: 0 15px;
+    background: red;
+    color: white;
+}
+#submit:hover{
+    color: red;
+    background: white;
+    border: 0.5px solid red;
+}
+.footer{
+    background: rgb(44, 43, 43);
+    color: white;
+    text-align: center;
+    height: 80px;
+    padding: 10px;
+}
+.footer i{
+    font-size: 2rem;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+@media (max-width:700px) {
+    .footer{
+        height: 80px;
+        padding: 10px;
+        padding-bottom: 20px;
+    }
+    .footer i{
+        font-size: 1.5rem;
+        padding: 10px;
+        padding-bottom: 15px;
+    }
+    
+}
+
+@media (max-width:700px) {
+    body{
+        overflow-x: hidden;
+    }
+    #checkbtn{
+        margin-right: 20px;
+        font-size: 22px;
+        display: block;
+    }
+    .header-2 ul{
+        line-height: 30px;
+        margin-right: 0px;
+        position: absolute;
+        top: 60px;
+        right: -130px;
+        padding: 10px 30px 30px 30px;
+        background: red; 
+    }
+    .header-2 li{
+        display:block;
+        padding: 0 0px;
+    }
+    .main div{
+        margin-left: 50px;
+        font-size: 20px;
+        padding-top: 100px;
+    }
+    .about{
+        font-size: 17px;
+        margin-top: 0px;
+    }
+    .aboutM{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .about-1 img{
+        height: 270px;
+        width: 300px;
+        border-radius: 10px;
+        margin-left: 0px;
+    }
+    .about-2{
+        text-align: left;
+        font-size: 16px;
+        padding: 15px;
+        line-height: 22px;
+    }
+    .skill{
+        padding: 20px;
+        font-size: 17px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    .skillM{
+       flex-direction: column;
+        justify-content: center;
+        margin-top: 0px;
+        line-height: 22px;
+    }
+    .skill-1{
+        width: 320px;
+        font-size: 16px;
+        padding: 20px;
+    }
+    .skill-2{
+        width: 320px;
+        margin-left: 20px;
+    }
+    .bars{
+        width: 300px;
+    }
+    .info{
+        padding: 5px 0px;
+    }
+    .line{
+        width: 300px;
+        height: 5px;
+    }
+    .html{
+        height: 5px;
+        width: 250px;
+    }
+    .css{
+        height: 5px;
+        width: 220px;
+    }
+    .bootstrap{
+        height: 5px;
+        width: 190px;
+    }
+    .javascript{
+        height: 5px;
+        width: 160px;
+    }
+    .react{
+        height: 5px;
+        width: 130px;
+    }
+    #work{
+        font-size: 17px;
+    }
+    .work{
+        grid-template-columns:auto;
+        row-gap: 30px;
+        margin: 0 0px;
+        margin-bottom: 10px;
+    }
+    .work img{
+        height: 210px;
+        width: 300px;
+    }
+    .work p{
+        padding: 5px;
+        line-height: 22px;
+    }
+    .work-1{
+        width: 300px;
+        height: 320px;
+    }
+    .work-2{
+        width: 300px;
+        height: 320px;
+    }
+    .work-3{
+        width: 300px;
+        height: 320px;
+    }
+    .work-4{
+        width: 300px;
+        height: 320px;
+    }
+    #touch{
+        font-size: 17px;
+    }
+    .contact{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 30px;
+        margin-bottom: 20px;
+    }
+    .contact-1{
+        width: 320px;
+        margin-bottom: 15px;
+    }
+    .contact-1 div{
+        margin-left: 20px;
+    }
+    .contact-2{
+        width: 320px;
+    }
+    .contact-2 input{
+        width: 130px;
+        height: 20px;
+    }
+    #subject{
+        width: 295px;
+        height: 30px;
+    }
+    #message{
+        width: 295px;
+        height: 60px;
+    }
+    
+}
