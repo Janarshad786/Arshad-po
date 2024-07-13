@@ -49,7 +49,7 @@ html{
     right: 10px;
 }
 .main{
-    background-image: url('/images/banner1.jfif');
+    background-image: url('banner1.jfif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
